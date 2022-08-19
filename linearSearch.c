@@ -1,12 +1,24 @@
 #include<stdio.h>
      int main()
 {
-          int arr[] = {1,2,3,4,5,6,7,8,9,10};
-          int n = 100;
+     int n;
+     printf("Enter the size of array\n");
+     scanf("%d",&n);
+     int arr[n];
+          for(int i=0;i<n;i++){
+     arr[i]=(rand()%100);
+     }
+     printf("The array is\n");
+     for(int i=0;i<n;i++){
+          printf("%d\n",arr[i]);
+     }
+          int num;
+          printf("Enter the number you want to search\n");
+          scanf("%d",&num);
           int flag = 0;
-          for(int i=1;i<sizeof(arr);i++){
+          for(int i=1;i<n;i++){
                if(i==n){
-    flag =1;
+                    flag =1;
     break;
                }
                else{
