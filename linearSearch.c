@@ -1,7 +1,7 @@
 #include<stdio.h>
      int main()
 {
-     int n;
+     int n,num;
      printf("Enter the size of array\n");
      scanf("%d",&n);
      int arr[n];
@@ -12,10 +12,12 @@
      for(int i=0;i<n;i++){
           printf("%d\n",arr[i]);
      }
-          int num;
+          
           printf("Enter the number you want to search\n");
           scanf("%d",&num);
+          
           int flag = 0;
+         
           for(int i=1;i<n;i++){
                if(i==n){
                     flag =1;
